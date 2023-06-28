@@ -1,12 +1,28 @@
-# GettingStarted
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    <style>
+        md-block { 
+            white-space: pre; 
+            font-family: monospace;
+            font-size: 120%;
+            margin-inline: auto;
+        }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <md-block>
+        # GettingStarted
 
 ---
 
 Welcome to Mutall Data, here is a documentation on how to install all softwares and tools we use in our daily programming, and how to configure them.  
 I will take you through a detailed guideline on how to correctly install all the programs on your system.
-
 Let's start with browsers, we recommend having two or more browsers to carry out your web tests, the browsers are Mozilla Firefox, Google Chrome, Edge, and others..
-
 By default windows users have Microsoft Edge already installed.
 
 ### 1. Installing Google Chrome.
@@ -48,9 +64,7 @@ Now that we have our browsers set up, let’s start downloading and instaling ou
 
 Visual Studio Code (VS Code) is a free and open-source code editor, it’s designed for developers working on web and cloud applications and  
 supports a wide range of programming languages including but not limited to JavaScript, TypeScript, C#, Python, PHP, Go and more.
-
 The editor includes features such as IntelliSense (code completion), debugging, and Git integration.
-
 It also has a large ecosystem of extensions which can add additional functionality such as additional languages, themes, and debugging tools.
 
 1. Go to the Visual Studio Code website [click here](https://code.visualstudio.com/Download)
@@ -68,7 +82,6 @@ It also has a large ecosystem of extensions which can add additional functionali
 ---
 
 XAMPP is primarily used for web development and local testing of web applications.
-
 It allows developers to test their code on their local machines without the need for a live web server.
 
 1. Go to the Apache Friends website [click here](https://www.apachefriends.org/download.html).
@@ -105,15 +118,15 @@ It allows developers to test their code on their local machines without the need
 ### Changing Server type from MariaDB to MySQL.
 
 1.  Stop the Apache and MariaDB services in XAMPP Control Panel.
-2.  First of all, you will have to download the latest version of the MySQL Community Server from the [official website](https://dev.mysql.com/downloads/mysql/)
-3.  Select your Operating system Microsft Windows.
-4.  In the Downloads section, select and download the ZIP file “Windows (x86, 64-bit), ZIP Archive"
+2.  First of all, you will have to download the latest version of the MySQL Community Server from the [official website](https://dev.mysql.com/downloads/mysql/)(Step:1)
+3.  Select your Operating system Microsft Windows .(Step:2)
+4.  In the Downloads section, select and download the ZIP file “Windows (x86, 64-bit), ZIP Archive”(Step:3)
     You will be redirected to the page shown below, you can continue with the download by clicking on “ No thanks, just start my download” if you dont want to create or login to the Oracle website.
-5.  Locate your compress file in your computer, then extract the content.
-6.  Stop all running instance of Apache or MYSQL.
+5.  Locate your compress file in your computer, then extract the content
+6.  Stop all running instance of Apache or MYSQL
 7.  The current working directory is C:\xampp.
-8.  Rename the mysql folder in C:\xampp to mariadb.
-9.  Download the mysql folder from [Mysql site](https://dev.mysql.com/downloads/mysql/) into C:\xampp
+8.  Rename the mysql folder in C:\xampp to mariadb
+9.  Download the mysql folder from the server into C:\xampp [click here to download the file](!http://206.189.207.206/)
 10. You can verify via PHPMyAdmin or you can alternatively use the command line as illustrated below.
 11. Now open xampp control panel and start both Apache and MySQL services.
 12. Once the services are running, you can open you can run mysql from the command prompt using:
@@ -128,7 +141,7 @@ It allows developers to test their code on their local machines without the need
 
     > Welcome to the MySQL monitor. Commands end with ; or \g....
 
-14. If you get an 'Mysql Command Not Found' error means the computer does not understand the mysql command so what you need to do is add mysql to windows environment.
+14. If you get an 'Mysql Command Not Found' error you need to add mysql to windows environment.
 
 - Navigate to the Windows Start Menu and select This PC.
 - Click the Properties tab.
@@ -142,16 +155,6 @@ It allows developers to test their code on their local machines without the need
 - Restart the cmd interface and enter the initial command once again:
 
   > mysql -u root -p
-
-15. Last thing is installing pma(phpmyadmin) to allow in creating of tables in your database.
-
-- Ensure your MYSql service is running in Xampp.
-- Click on admin button under MySql service
-- The Phpmyadmin site will open on your browser.
-- Click on the [import](http://localhost/phpmyadmin/index.php?route=/server/import) tab.
-- In the (File to Import) section, choose the file you want to import.
-- The file you are to import is _create table_ file location should be in C:\xampp\phpMyAdmin\sql
-- Then click on import button, you should notice a new table named phpmyadmin was created and is listed in the databases side panel.
 
 ## Apache Netbeans 16 Installation Guidelines.
 
@@ -352,7 +355,7 @@ Git also provides a powerful set of tools for managing and reviewing changes, su
 13. Set up the Android Virtual Device (AVD) Manager: The Android Virtual Device Manager is used to create and manage virtual devices that emulate different Android devices. You can create an AVD by clicking on the "AVD Manager" button and then clicking on the "Create Device" button.
 14. Create a new project: Once you have set up the SDK and AVD, you can create a new Android project. Click on the "Create New Project" button and follow the instructions to create a new Android project.
 
-## For Ubuntu 22.04 Users.
+## For Linux Users.
 
 ---
 
@@ -541,3 +544,7 @@ Step - 5 : **Installing FileZilla client.**
 2. The following command prints the version of the installed FileZilla client.
 
    > filezilla --version
+
+    </md-block>
+  </body>
+</html>
