@@ -95,13 +95,10 @@ It allows developers to test their code on their local machines without the need
 
 1. Open XAMPP Control Panel, On Apache section tap on config, a drop down box will appear
 2. Click on Apache (httpd.conf).
-
 3. On the Notepad document, you will edit the DocumentRoot to your directory where your projects are located.
    Note: Have your projects in a different partition from the main computer partitionto reduce problems while using XAMPP.
-
 4. On the “File” tab click on save or you can CTRL + S to save your file, then Close the Notepad.
 5. Restart your XAMPP services, then click on “Admin” on the Apache service to open your localhost on the browser.
-
 ### Changing Server type from MariaDB to MySQL.
 
 1.  Stop the Apache and MariaDB services in XAMPP Control Panel.
@@ -268,18 +265,7 @@ The server version allows for easy setup and management of FTP connections. File
 
 ### How to upload projects to the server using filezilla.
 
-1. Open up your Filezilla program,enter the details of the server you want to connect to. This includes the host name, the username the port number, and password which are provided below.
-
-#### Server Details for Mutall.
-
-> Host name : sftp://206.189.207.206
->
-> Username : Mutall
->
-> The password we will provided to you.
->
-> Port: 22
-
+1. Open up your Filezilla program,enter the details of the server you want to connect to. This includes the host name, the username the port number, and password.  
 2. Once you have entered all the required details, click on the "Connect" button to establish a connection to the server.
 3. After you have established a connection, you will see two panes in the FileZilla window. The left pane shows the files and folders on your local computer, while the right pane shows the files and folders on the remote server.
 4. To upload files to the server, simply select the files or folders you want to upload in the left pane and then drag them to the desired location in the right pane. You can also use the upload button on the toolbar, which looks like an arrow pointing upwards.
@@ -293,7 +279,7 @@ Git allows developers to work on the same codebase simultaneously by keeping tra
 This makes it easy for teams of developers to collaborate on the same project, and also makes it easy to roll back to previous versions of the code if something goes wrong.  
 Git also provides a powerful set of tools for managing and reviewing changes, such as branching, merging, and diffing, which help developers keep track of their codebase and collaborate more effectively.
 
-1. To install Git, you will first need to download the installer for your operating system from the official Git website (https://git-scm.com/downloads)
+1. To install Git, you will first need to download the installer for your operating system from the official Git website (https://git-scm.com/downloads).
 2. Select the correct version of according to your system architecture (32-bit or 64-bit).
 3. Once the installer has been downloaded, run it and follow the prompts to complete the installation.
 4. Click on “next”
